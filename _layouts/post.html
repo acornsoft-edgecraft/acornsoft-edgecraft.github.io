@@ -119,6 +119,15 @@ layout: default
     </div>
     {% endif %}
   </div>
-
-  {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
-  </div>
+  <!-- disqus 기능 주석처리-->
+  <!-- {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %} -->
+  <script src="https://utteranc.es/client.js"
+        repo="acornsoft-edgecraft/acornsoft-edgecraft.github.io"
+        issue-term="pathname"
+        label="utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+  
+</div>
