@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Style Guide
+title2: 이곳에 제목을 입력하세요. # 메뉴와 page-title 분리
 permalink: /styleguide/
 image: 08.jpg
 ---
