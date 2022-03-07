@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Style Guide
+title: community
 title2: 이곳에 제목을 입력하세요. # 메뉴와 page-title 분리
-permalink: /styleguide/
+permalink: /community/
 image: 08.jpg
 ---
-
+## 내용: 행사, 프로젝트url, 연락처, 공유해야 할 내용들
 A paragraph looks like this — dolor amet cray stumptown fingerstache neutra food truck seitan poke cardigan waistcoat VHS snackwave celiac hella. Godard seitan shoreditch flexitarian next level trust fund man braid vegan listicle keytar bitters. Disrupt cray fashion axe unicorn lomo shaman poke glossier keffiyeh snackwave austin tattooed seitan hexagon lo-fi. Lumbersexual irony vaporware, butcher shaman church-key iceland.
 
 ***
