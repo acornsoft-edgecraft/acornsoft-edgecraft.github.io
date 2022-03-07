@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 title: Zolan
-logo: edgecraft.png # You can add own logo.
+logo: edgecraft.png # logo 변경완료
 description: Zolan is modern minimal theme for Jekyll
 
 
@@ -25,8 +25,8 @@ pinterest: https://pinterest.com/ # Add your Pinterest handle
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
-
+# disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+# disqus 주석처리
 
 #-------------------------------
 # Instagram Feed
