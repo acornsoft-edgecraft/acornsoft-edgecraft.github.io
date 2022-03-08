@@ -5,22 +5,22 @@ title2: Contributor Guide with Vscode # 메뉴와 page-title 분리
 permalink: /opensource-guide/
 image: 08.jpg
 ---
-- [# Contributor Guide with Vscode](#-contributor-guide-with-vscode)
-- [## Branch 전략](#-branch-전략)
-  - [Git-Flow](#git-flow)
-  - [Summary](#summary)
-- [## Contributing](#-contributing)
-- [## Pull Request를 위한 전반적인 Flow](#-pull-request를-위한-전반적인-flow)
-- [## (optionall) Install pugin for vscode](#-optionall-install-pugin-for-vscode)
-- [## Pull Request Work Process](#-pull-request-work-process)
-  - [Fork & Clone](#fork--clone)
-  - [개발 준비](#개발-준비)
-  - [개발 완료후 repository 동기화(fetch/rebase)](#개발-완료후-repository-동기화fetchrebase)
-      - [1. 로컬 개발 완료후 origin(forked) repository의 feature/featureA branch에 commit/push 한다.](#1-로컬-개발-완료후-originforked-repository의-featurefeaturea-branch에-commitpush-한다)
-      - [2. (optional) 개발 완료후 commit내용 합치는 작업을 한다(Squash)](#2-optional-개발-완료후-commit내용-합치는-작업을-한다squash)
-      - [3. remote(upstream) repository와 동기화한다.](#3-remoteupstream-repository와-동기화한다)
-  - [소스 동기화 완료후 Pull Request 생성 - Vscode](#소스-동기화-완료후-pull-request-생성---vscode)
-  - [리뷰 승인 확인 및 feature branch 삭제](#리뷰-승인-확인-및-feature-branch-삭제)
+ - [Contributor Guide with Vscode](#contributor-guide-with-vscode)
+ - [Branch 전략](#branch-전략)
+   - [Git-Flow](#git-flow)
+   - [Summary](#summary)
+ - [Contributing](#-contributing)
+ - [Pull Request를 위한 전반적인 Flow](#pull-request를-위한-전반적인-flow)
+ - [(optionall) Install pugin for vscode](#optionall-install-pugin-for-vscode)
+ - [Pull Request Work Process](#pull-request-work-process)
+   - [Fork & Clone](#fork--clone)
+   - [개발 준비](#개발-준비)
+   - [개발 완료후 repository 동기화(fetch/rebase)](#개발-완료후-repository-동기화fetchrebase)
+       - [1. 로컬 개발 완료후 origin(forked) repository의 feature/featureA branch에 commit/push 한다.](#1-로컬-개발-완료후-originforked-repository의-featurefeaturea-branch에-commitpush-한다)
+       - [2. (optional) 개발 완료후 commit내용 합치는 작업을 한다(Squash)](#2-optional-개발-완료후-commit내용-합치는-작업을-한다squash)
+       - [3. remote(upstream) repository와 동기화한다.](#3-remoteupstream-repository와-동기화한다)
+   - [소스 동기화 완료후 Pull Request 생성 - Vscode](#소스-동기화-완료후-pull-request-생성---vscode)
+   - [리뷰 승인 확인 및 feature branch 삭제](#리뷰-승인-확인-및-feature-branch-삭제)
 
 <br/>
 <br/>
