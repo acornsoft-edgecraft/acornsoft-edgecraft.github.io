@@ -122,7 +122,7 @@ $ git branch --list
 ```  
 <br/>
 
-1) remoet upstream(원본) develop branch와 동기화(fetch/rebase)  
+2) remoet upstream(원본) develop branch와 동기화(fetch/rebase)  
 개발 전에 origin develop branch를 최신 소스로 동기화한다. 
 ```sh
 $ git branch --list
