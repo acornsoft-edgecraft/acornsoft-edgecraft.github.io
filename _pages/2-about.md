@@ -3,7 +3,7 @@ layout: page
 title: About
 title2: 이곳에 제목을 입력하세요. # 메뉴와 page-title 분리
 permalink: /about/
-image: overview.jpeg
+image: main01.jpg
 ---
 
 ## 프로젝트 개요
