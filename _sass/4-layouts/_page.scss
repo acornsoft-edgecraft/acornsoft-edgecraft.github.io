@@ -1,10 +1,10 @@
 .page-title-box {
-  padding: 80px 0;
-  border-top: 1px solid $light-gray;
+  padding: 20px 0; //80px 0;
+  border-top: solid $light-gray; //메뉴바와의 구분선: 1px solid $light-gray;
 
   .page-title {
-    font-size: 57px;
-    line-height: 70px;
+    font-size: 45px; //57px
+    line-height: 70px; //70px
     margin: 0;
   }
 
@@ -24,9 +24,9 @@
     width: 70%; // 상단 이미지 size 조정
     height: 70%; 
     margin: 0 auto; // 상단 이미지 가운데 정렬
-    background-size: contain;
+    background-size: cover; //contain
     background-position: center center;
-    background-repeat: no-repeat; // 이미지 반복코드
+    background-repeat: no-repeat; // 이미지 반복코드 no-repeat
     background-color: $white;
 
     &:after {
@@ -41,7 +41,7 @@
 }
 
 .page {
-  margin: 80px auto;
+  margin: 50px auto; //80px
 
   img {
     margin: 30px 0;

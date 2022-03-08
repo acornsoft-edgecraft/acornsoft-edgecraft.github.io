@@ -1,12 +1,12 @@
 .post-title-box {
-  padding: 80px 0;
-  border-top: 1px solid $light-gray;
+  padding: 20px 0; //80px
+  border-top: solid $light-gray; //1px
 
   .post-title {
-    margin-bottom: 10px;
+    margin-bottom: 0px; //10px
     width: 800px; //post-title 너비 확장
     max-width: 100%;
-    font-size: 57px;
+    font-size: 45px; //57px
     line-height: 70px;
   }
 
@@ -63,10 +63,19 @@
 }
 
 .post-image {
+    width: 70%; // 상단 이미지 size 조정
+    height: 70%; 
+    margin: 0 auto; // 상단 이미지 가운데 정렬
+    background-size: cover; //contain
+    background-position: center center;
+    background-repeat: no-repeat; // 이미지 반복코드 no-repeat
+    background-color: $white;
+  /*
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: $light-gray;
+    */
   &:after {
     content: "";
     display: table;
@@ -77,7 +86,7 @@
 }
 
 .post {
-  margin: 80px auto;
+  margin: 0px auto; //80px
 
   &.post-no-image {
     margin: 0 auto 80px; 
