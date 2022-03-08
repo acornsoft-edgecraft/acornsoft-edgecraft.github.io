@@ -1,10 +1,10 @@
 ---
 layout: doc
-title: Opensource Guide
-permalink: /opensourceguide/
-image: opensource-img.jpg
+menu: EdgeCraft 프로젝트 
+title: EdgeCraft 오픈소스 정책
+category: 정책
+order: 1
 ---
-
 # 아콘소프트 EDGECRAFT 프로젝트 오픈소스 정책
 
 현재 아콘소프트는 오픈소스 프로젝트로 EDGECRAFT의 개발을 진행하고 있다. EDGECRAFT 프로젝트의 개발과 관련하여 오픈소스 정책을 제시한다. 향후, 오픈소스 관련 경험을 축적함에 따라 아콘소프트 조직 전체에 적용되는 오픈소스 정책을 별도로 정의하도록 한다.
