@@ -21,14 +21,18 @@
 .page__head {
   
   .page-image {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $light-gray;
+    background-color: $white;
+    //width: 70%;
+    //height: 70%;
+
     &:after {
       content: "";
       display: table;
       width: 100%;
+      //height: 90%;
       min-height: 300px;
       padding-top: 50%;
     }

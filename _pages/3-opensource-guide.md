@@ -3,7 +3,7 @@ layout: page
 title: opensource-guide
 title2: Contributor Guide with Vscode # 메뉴와 page-title 분리
 permalink: /opensource-guide/
-image: 08.jpg
+image: opensource-guide-meeting.png
 ---
  - [Contributor Guide with Vscode](#contributor-guide-with-vscode)
  - [Branch 전략](#branch-전략)
