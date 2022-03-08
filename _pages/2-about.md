@@ -6,7 +6,7 @@ permalink: /about/
 image: main01.jpg
 ---
 
-# 1. 시스템 개요
+## 시스템 개요
 
 * 시스템 이름
   * EdgeCraft(대규모 엣지 클라우드의 고속 구축을 위한 클라우드 인프라 구축 자동화 관리 플랫폼)
@@ -38,4 +38,4 @@ image: main01.jpg
   엣지 클라우드 설치 전 사전 검증, 설치 후 자동으로 검증하여 안전한 클라우드 인프라를 준비하도록 하고, 상용 운용 중에는 주기적 또는 간헐적으로 검증하여 결과를 운영 시스템에 전달함.
 
 * 단계별 진행 일정
-  ![]({{site.baseurl}}/images/loadmap01.png)
+  ![]({{site.baseurl}}/images/roadmap01.png)

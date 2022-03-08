@@ -10,9 +10,8 @@ description: Zolan is modern minimal theme for Jekyll
 author:
   name: acornsoft # 이름 수정
   image: main01.jpg # 메인이미지 수정
-  say-hello: Hello, I’m <strong>edgecraft</strong>
-  bio: Designs, talks, and writes about <strong>web</strong>, <strong>ethics</strong>, <strong>privacy</strong>, and dev. I share design tutorials, free resources and inspiration. Loves <a href="#">music</a> & riding his bicycle.
-
+  say-hello: <strong>Edgecraft</strong>
+  bio: 지역적으로 분산된 수많은 <strong>엣지 클라우드 인프라</strong>를 통제된 계획에 따라 <strong>고속으로 구축하고 관리</strong>하는 <strong>원격 자동화 관리</strong> SW 플랫폼
 
 #-------------------------------
 # Contact links
