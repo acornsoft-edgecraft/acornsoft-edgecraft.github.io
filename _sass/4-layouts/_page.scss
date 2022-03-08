@@ -21,20 +21,20 @@
 .page__head {
   
   .page-image {
+    width: 70%; // 상단 이미지 size 조정
+    height: 70%; 
+    margin: 0 auto; // 상단 이미지 가운데 정렬
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat; // 이미지 반복코드
     background-color: $white;
-    text-align : center;
-    //width: 70%;
-    //height: 70%;
 
     &:after {
       content: "";
       display: table;
       width: 100%;
       //height: 90%;
-      min-height: 300px;
+      min-height: 200px; //300px
       padding-top: 50%;
     }
   }
