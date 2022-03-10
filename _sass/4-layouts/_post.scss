@@ -250,3 +250,17 @@
 .utterances {
   max-width:100%;
 }
+
+//post_sidebar 스크롤 고정
+.sidebar-style{
+  position: sticky;
+  top: 20px; 
+}
+// 링크 클릭시 색상 변경
+a:hover{
+  color:red;
+  text-decoration-line:underline;
+}
+a:active{
+  color:green;
+}

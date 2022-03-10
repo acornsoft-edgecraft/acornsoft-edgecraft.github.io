@@ -27,10 +27,10 @@ layout: default
   <div class="container">
   <div class="row">
     <!-- begin menu -->
-    <nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
-      <ul>
+     <nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
+      <ul class="sidebar-style"> <!--post 세로메뉴바 스크롤 고정-->
         {% assign grouped = site.docs | group_by: 'category' %}
-        {% for group in grouped %}
+        {% for group in grouped %}    
           <li class="nav__item top-level {% if group.name == page.category %}current{% endif %}">
             {% assign items = group.items | sort: 'order' %}
             <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
