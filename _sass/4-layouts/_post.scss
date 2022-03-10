@@ -86,7 +86,7 @@
 }
 
 .post {
-  margin: 0px auto; //80px
+  margin: 20px auto; //80px
 
   &.post-no-image {
     margin: 0 auto 80px; 
@@ -148,12 +148,14 @@
     &:last-child {
       padding-right: 0;
     }
-
+    
     .post__nav__image {
-      display: block;
+      width: 70%; //추가, post_nav_image 크기 조정
+      margin: auto; //추가
+      display: block; //block
       margin-bottom: 40px;
       background-position: center;
-      background-size: cover;
+      background-size: cover; 
       background-repeat: no-repeat;
       background-color: $light-gray;
       transition: .35s ease-in-out;
@@ -163,7 +165,7 @@
       &:after {
         content: "";
         display: table;
-        width: 100%;
+        width: 100%; //100%
         padding-bottom: 65%;
       }
     }
@@ -203,7 +205,7 @@
   .prev__excerpt,
   .next__excerpt {
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; //400px
     margin: 0 auto;
     text-align: center;
   }
