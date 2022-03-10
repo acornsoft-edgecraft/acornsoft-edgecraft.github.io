@@ -47,7 +47,7 @@
 }
 
 .main-nav {
-  position: absolute;
+  position: absolute; //absolute
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -125,6 +125,7 @@
     }
   }
 }
+
 
 .nav-buttons {
   position: absolute;
