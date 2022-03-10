@@ -144,9 +144,10 @@
 
   .prev,
   .next {
-    flex: 1 0 50%;
+    flex: 0 0 50%; // post_nav_img 1개일 경우에도 크기 고정, 1 0 50%
     &:last-child {
       padding-right: 0;
+      margin: auto; // 추가, post_nav_img 1개일 경우 가운데 정렬
     }
     
     .post__nav__image {
