@@ -41,20 +41,20 @@ Filesystem interface (AKA, File Storage)
 
 ![Ceph Architecture](/images/ceph-architecture.png)
 
-위 그림과 같이 RADOS를 기반으로 데이터를 Read/Write하고, librados라는 라이브러리를 제공하여 RADOS에 직접 접근할 수 있도록 제공한다. 또한, RadosGW, RBD,CephFS와 같은 ceph clients를 제공하여 Ceph Storage에 접근할 수 있는 인터페이스를 제공 한다.
+위 그림과 같이 RADOS를 기반으로 데이터를 Read/Write하고, librados라는 라이브러리를 제공하여 RADOS에 직접 접근할 수 있도록 제공한다. 또한, RadosGW, RBD,CephFS와 같은 ceph clients를 제공하여 Ceph Storage에 접근할 수 있는 인터페이스를 제공한다.
 
 - **RADOS(Ceph Storage Cluster)**
 RADOS는 Reliable Autonomic Distributed Object Store의 약자이고 object storage이다.  
-Scalable, Reliable Storage Service for Petabyte-scale Storage Cluster로 Ceph의 데이터 접근에 대해 근간을 이루는 서비스 이다. 즉, Ceph에서 Object를 읽고 쓸때 RADOS를 사용 한다.
+Scalable, Reliable Storage Service for Petabyte-scale Storage Cluster로 Ceph의 데이터 접근에 대해 근간을 이루는 서비스이다. 즉, Ceph에서 Object를 읽고 쓸때 RADOS를 사용한다.
 
 - **RADOSGW** (Object Storage)
 Amazon S3 및 Openstack Swift와 호환되는 인터페이스가 있는 RESTfull API 서비스를 제공한다.
 
 - **RBD** (Block Device)
-스냅샷 및 clone 기능을 가지고 있는 block device 서비스를 제공한다. 이는 RADOS에서 disk image의 저장소 이다.
+스냅샷 및 clone 기능을 가지고 있는 block device 서비스를 제공한다. 이는 RADOS에서 disk image의 저장소이다.
 
 - **Ceph FS** (File System)
-마운트 또느 사용자 공간에서 파일 시스템으로 사용할 수 있는 POSIX 호환 파일 시스템을 제공한다.
+마운트 또는 사용자 공간에서 파일 시스템으로 사용할 수 있는 POSIX 호환 파일 시스템을 제공한다.
 
 ## Ceph 구성 요소
 
@@ -64,7 +64,7 @@ Amazon S3 및 Openstack Swift와 호환되는 인터페이스가 있는 RESTfull
 
 - **Ceph OSD** : Ceph OSD (객체 스토리지 데몬, ceph-osd)는 데이터를 저장하고, 데이터 복제, 복구, 재조정을 처리하고 다른 Ceph OSD 데몬에서 하트비트를 확인하여 Ceph 모니터 및 관리자에 일부 모니터링 정보를 제공합니다. 이중화 및 고가용성을 위해 일반적으로 최소 3개의 Ceph OSD가 필요합니다.  
 
-- **MDS** : Ceph Metadata Server (MDS, ceph-mds)는 Ceph 파일 시스템 을 대신하여 메타데이터를 저장 합니다 (즉, Ceph Block Devices 및 Ceph Object Storage는 MDS를 사용하지 않음). Ceph 메타데이터 서버를 사용하면 POSIX 파일 시스템 사용자가 Ceph Storage Cluster에 막대한 부담을 주지 않고 기본 명령(예 ls: find, 등) 을 실행할 수 있습니다.  
+- **MDS** : Ceph Metadata Server (MDS, ceph-mds)는 Ceph 파일 시스템 을 대신하여 메타데이터를 저장 합니다 (즉, Ceph Block Devices 및 Ceph Object Storage는 MDS를 사용하지 않음). Ceph 메타데이터 서버를 사용하면 POSIX 파일 시스템 사용자가 Ceph Storage Cluster에 막대한 부담을 주지 않고 기본 명령(예 ls: find, 등)을 실행할 수 있습니다.  
 
 ## Ceph on Kubernetes with Rook
 
