@@ -8,6 +8,7 @@
     max-width: 100%;
     font-size: 45px; //57px
     line-height: 70px;
+    text-align: center; // 추가, title 가운데 정렬
   }
 
   .post__date {
@@ -86,7 +87,7 @@
 }
 
 .post {
-  margin: 0px auto; //80px
+  margin: 20px auto; //80px
 
   &.post-no-image {
     margin: 0 auto 80px; 
@@ -144,16 +145,19 @@
 
   .prev,
   .next {
-    flex: 1 0 50%;
+    flex: 0 0 50%; // post_nav_img 1개일 경우에도 크기 고정, 1 0 50%
     &:last-child {
       padding-right: 0;
+      margin: auto; // 추가, post_nav_img 1개일 경우 가운데 정렬
     }
-
+    
     .post__nav__image {
-      display: block;
+      width: 70%; //추가, post_nav_image 크기 조정
+      margin: auto; //추가
+      display: block; //block
       margin-bottom: 40px;
       background-position: center;
-      background-size: cover;
+      background-size: cover; 
       background-repeat: no-repeat;
       background-color: $light-gray;
       transition: .35s ease-in-out;
@@ -163,7 +167,7 @@
       &:after {
         content: "";
         display: table;
-        width: 100%;
+        width: 100%; //100%
         padding-bottom: 65%;
       }
     }
@@ -203,7 +207,7 @@
   .prev__excerpt,
   .next__excerpt {
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; //400px
     margin: 0 auto;
     text-align: center;
   }
@@ -245,4 +249,18 @@
 // utterances 사이즈 조정
 .utterances {
   max-width:100%;
+}
+
+//post_sidebar 스크롤 고정
+.sidebar-style{
+  position: sticky;
+  top: 20px; 
+}
+// 링크 클릭시 색상 변경
+a:hover{
+  color:red;
+  text-decoration-line:underline;
+}
+a:active{
+  color:green;
 }

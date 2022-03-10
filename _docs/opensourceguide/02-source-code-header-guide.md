@@ -33,6 +33,7 @@ order: 2
  *	jquery.ui.core.js
  */
 ```
+<br/>
 
 ### 네이버 [egjs](https://github.com/naver/egjs-rotate/blob/4c8711fd6e7b9f5592d3c872270f64b4aefb6763/config/validate-commit-msg.js) 프로젝트 경우
 

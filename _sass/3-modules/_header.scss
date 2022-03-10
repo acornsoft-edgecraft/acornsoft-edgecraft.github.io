@@ -47,7 +47,7 @@
 }
 
 .main-nav {
-  position: absolute;
+  position: absolute; //absolute
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -68,11 +68,12 @@
 
   .nav__list {
     white-space: nowrap;
-    
+
     .nav__item {
       display: inline-block;
 
       .nav__link {
+        
         display: inline-block;
         padding: 10px 30px;
         font-size: 14px;
@@ -124,6 +125,7 @@
     }
   }
 }
+
 
 .nav-buttons {
   position: absolute;
