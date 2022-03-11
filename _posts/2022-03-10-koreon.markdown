@@ -8,7 +8,7 @@ tags:   edgecraft
 
 <style>
   table{
-    border: 1px solid;
+    border: 1px solid grey;
     border-collapse: collapse;
     width: 100%;
   }
@@ -16,10 +16,12 @@ tags:   edgecraft
     border: 1px solid grey;
     padding: 5px;
     text-align: center;
+    background-color: #374D9A;
+    color: white;
   }
   td{
     border: 1px solid grey;
-    padding: 8px;
+    padding: 7px;
     text-align: left;
   }
 </style>

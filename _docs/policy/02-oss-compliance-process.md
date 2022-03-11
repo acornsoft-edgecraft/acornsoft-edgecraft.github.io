@@ -181,8 +181,7 @@ BOM을 관리하는 도구는 SW360을 사용한다.
 
  ![process.png](../images/process.png) 
 
- _<center>< https://www.linuxsources.org/content/open-compliance-directory-add-organization-request ></center>_
-
+_<center><https://www.linuxsources.org/content/open-compliance-directory-add-organization-request></center>_
  
 1. 접수 확인 (Acknowledge) : 문의를 받으면 즉시 응답하여, 문의가 접수되었음을 알린다. 이때 조치 예정일을 함께 알린다. 요청자의 의도가 무엇인지 정확히 파악하는 것이 중요하기 때문에 문의가 불명확한 경우 추가 설명을 요청한다.
 2. 요청자에게 알림 (Inform) : 요청자에게 오픈소스 컴플라이언스를 충실히 수행하고 있음과 요청자의 문의에 대해 조사하고 있음을 알린다. 내부 조사 진행 상황이 업데이트될 때마다 알리는 것이 좋다.
