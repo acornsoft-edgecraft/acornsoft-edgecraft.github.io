@@ -10,7 +10,7 @@ tags:   Case-study
 
 ## Work Process
 
-- Using Kubernetes v1.6+ Primatives
+- Using Kubernetes v1.6+ Primitives
 - Using Kubernetes Helm Charts
 
 

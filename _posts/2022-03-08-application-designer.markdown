@@ -11,7 +11,7 @@ Edge Cloud환경에서 다양한 엣지 서비스(5G private cloud, AL/ML, IOT, 
 또한, 기업 엣지 어플리케이션의 입력, 출력, 통신방식(HTTP, HTTPS, TCP, GRPC 등)을 emulation하는 형태로 구성된 사용자 application을 platform application과 연동하도록 하여 Scaling, Fail-over, 성능, 모니터링, 트레이싱을 쉽게 확인하게 된다.
 
 ## Motivation
-실 예로 application 로그를 수집하여 Elastic search에 저장하고 Kibana UI를 통해 확인하고자 할때 Elastic Search, Kibana, Fluentbit or Logstash의 helm chart를 모두 분석하고 상호 연관된 속성값을 정확히 설정해 주어야 한다. 즉, 보안(TLS를 위한 인증서 생성 및 설정), 연관된 Endpoint 설정, ingress 설정, application log 정규식 작성, 외부 보안 연결을 위한 cert manager를 통한 공인인증서 설정등. 이런 작업은 익숙하지 않는 경우 많은 시간과 비용이 필요하게 된다. 이와 같이 공통된 부분은 platform에서 잘 정의된 형태로 제공해 주고 사용자는 자신의 application 로그에 대한 설정에만 집중하여 즉시 연동을 시험하여 확인할 수 있어야 한다.
+실 예로 application 로그를 수집하여 Elastic search에 저장하고 Kibana UI를 통해 확인하고자 할때 Elastic Search, Kibana, Fluentbit or Logstash의 helm chart를 모두 분석하고 상호 연관된 속성값을 정확히 설정해 주어야 한다. 즉, 보안(TLS를 위한 인증서 생성 및 설정), 연관된 Endpoint 설정, ingress 설정, application log 정규식 작성, 외부 보안 연결을 위한 cert manager를 통한 공인인증서 설정등. 이런 작업은 익숙하지 않은 경우 많은 시간과 비용이 필요하게 된다. 이와 같이 공통된 부분은 platform에서 잘 정의된 형태로 제공해 주고 사용자는 자신의 application 로그에 대한 설정에만 집중하여 즉시 연동을 시험하여 확인할 수 있어야 한다.
 
 ## Main Features
 
