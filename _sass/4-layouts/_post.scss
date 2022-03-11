@@ -67,7 +67,7 @@
     width: 70%; // 상단 이미지 size 조정
     height: 70%; 
     margin: 0 auto; // 상단 이미지 가운데 정렬
-    background-size: cover; //contain
+    background-size: contain; //contain
     background-position: center center;
     background-repeat: no-repeat; // 이미지 반복코드 no-repeat
     background-color: $white;

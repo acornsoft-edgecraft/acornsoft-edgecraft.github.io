@@ -13,6 +13,7 @@ tags:   Case-study
   - https://image-builder.sigs.k8s.io/capi/providers/openstack.html
   - https://ssup2.github.io/record/Kubernetes_%EC%84%A4%EC%B9%98_ClusterAPI_External_Cloud_Provider_Ubuntu_18.04_OpenStack/
   - https://www.jacobbaek.com/1101
+<br/><br/>
 
 * CAPI를 이용한 Openstack k8s cluster 구조
 ![clusterapi-openstack architecture](https://ssup2.github.io/images/theory_analysis/Kubernetes_ClusterAPI_Architecture_OpenStack/Kubernetes_ClusterAPI_Architecture_OpenStack.PNG)
@@ -60,6 +61,7 @@ $ curl -LO https://dl.k8s.io/release/v1.23.0/bin/linux/amd64/kubectl
 $ install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 $ kubectl version
 ```
+<br/>
 
 ### Kind 설치
 ```bash
@@ -76,20 +78,20 @@ root@boostrap1:/etc/sysctl.d# which kind
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
-- role: control-plane
+  role: control-plane
   extraPortMappings:
-  - containerPort: 6443
+    containerPort: 6443
     hostPort: 6443
     listenAddress: "0.0.0.0"      # Listen address 추가
     protocol: tcp
   kubeadmConfigPatches:
-  - |
+    
     kind: ClusterConfiguration
     apiServer:
       certSANs:
-        - localhost
-        - 127.0.0.1
-        - 192.168.77.222        # kubernetes apiserver 인증서에 Host IP 추가.
+          localhost
+          127.0.0.1
+          192.168.77.222        # kubernetes apiserver 인증서에 Host IP 추가.
 ```
 
  
@@ -125,6 +127,7 @@ k8s.gcr.io/kube-proxy                      v1.21.1              0e124fb3c695b   
 k8s.gcr.io/kube-scheduler                  v1.21.1              1248d2d503d37       51.9MB
 k8s.gcr.io/pause                           3.5                  ed210e3e4a5ba       301kB
 ```
+<br/>
 
 ### clusterctl 설치
 ```bash
@@ -137,6 +140,7 @@ clusterctl version: &version.Info{Major:"1", Minor:"0", GitVersion:"v1.0.2", Git
 
 $ 
 ```
+<br/>
 
 ### clusterctl을 이용하여 openstack infra상의 management cluster component 설치
 ```bash
@@ -210,87 +214,88 @@ $ openstack image create --disk-format qcow2 --container-format bare --public --
 
 $ openstack image create --disk-format qcow2 --container-format bare --public --file ./output/ubuntu-2004-kube-v1.20.10/ubuntu-2004-kube-v1.20.10 ubuntu-20.04-capi
 ```
+<br/>
 
 ### Workload cluster 생성
-- ssh key paire, app credential 설치
-```bash
-$ apt install -y python3-openstackclient
-$ openstack keypair create --private-key knit.key knit
+- ssh key paire, app credential 설치  
+  ```bash
+  $ apt install -y python3-openstackclient
+  $ openstack keypair create --private-key knit.key knit
 
-$ openstack application credential create cloud-controller-manager
-+--------------+----------------------------------------------------------------------------------------+
-| Field        | Value                                                                                  |
-+--------------+----------------------------------------------------------------------------------------+
-| description  | None                                                                                   |
-| expires_at   | None                                                                                   |
-| id           | 39305cccde614f0f86fa6e921e88b938                                                       |
-| name         | cloud-controller-manager                                                               |
-| project_id   | 1030e41a3f6a4d598983d715372fc375                                                       |
-| roles        | admin member reader                                                                    |
-| secret       | UAhv_AklfQu45uUTrbZUx1JEUCgR2OZJhcnijg5ybjdRO_XfGIIFiSY2m-kUYvmFYYIqXnCZSd73QTbimUs1gw |
-| system       | None                                                                                   |
-| unrestricted | False                                                                                  |
-| user_id      | 070e0441ad17402298204105a44e558e                                                       |
-+--------------+----------------------------------------------------------------------------------------+
+  $ openstack application credential create cloud-controller-manager
+  +--------------+----------------------------------------------------------------------------------------+
+  | Field        | Value                                                                                  |
+  +--------------+----------------------------------------------------------------------------------------+
+  | description  | None                                                                                   |
+  | expires_at   | None                                                                                   |
+  | id           | 39305cccde614f0f86fa6e921e88b938                                                       |
+  | name         | cloud-controller-manager                                                               |
+  | project_id   | 1030e41a3f6a4d598983d715372fc375                                                       |
+  | roles        | admin member reader                                                                    |
+  | secret       | UAhv_AklfQu45uUTrbZUx1JEUCgR2OZJhcnijg5ybjdRO_XfGIIFiSY2m-kUYvmFYYIqXnCZSd73QTbimUs1gw |
+  | system       | None                                                                                   |
+  | unrestricted | False                                                                                  |
+  | user_id      | 070e0441ad17402298204105a44e558e                                                       |
+  +--------------+----------------------------------------------------------------------------------------+
 
-$ openstack application credential list
-+----------------------------------+--------------------------+----------------------------------+-------------+------------+
-| ID                               | Name                     | Project ID                       | Description | Expires At |
-+----------------------------------+--------------------------+----------------------------------+-------------+------------+
-| 39305cccde614f0f86fa6e921e88b938 | cloud-controller-manager | 1030e41a3f6a4d598983d715372fc375 | None        | None       |
-+----------------------------------+--------------------------+----------------------------------+-------------+------------+
-```
+  $ openstack application credential list
+  +----------------------------------+--------------------------+----------------------------------+-------------+------------+
+  | ID                               | Name                     | Project ID                       | Description | Expires At |
+  +----------------------------------+--------------------------+----------------------------------+-------------+------------+
+  | 39305cccde614f0f86fa6e921e88b938 | cloud-controller-manager | 1030e41a3f6a4d598983d715372fc375 | None        | None       |
+  +----------------------------------+--------------------------+----------------------------------+-------------+------------+
+  ```
 
-```bash
-$ wget https://raw.githubusercontent.com/kubernetes-sigs/cluster-api-provider-openstack/master/templates/env.rc -O ./env.rc
+  ```bash
+  $ wget https://raw.githubusercontent.com/kubernetes-sigs/cluster-api-provider-openstack/master/templates/env.rc -O ./env.rc
 
-$ snap install yq  (yq가 없으면 아래 source env.rc clouds.yaml openstack 실행시 에러발생함)
+  $ snap install yq  (yq가 없으면 아래 source env.rc clouds.yaml openstack 실행시 에러발생함)
 
-$ vi clouds.yaml  (clouds.yaml 파일 생성)
-clouds:
-  openstack:
-    insecure: true
-    verify: false
-    identity_api_version: 3
-    auth:
-      auth_url: http://192.168.77.11/identity
-      project_name: cloudjeong
-      username: cloud-jeong
-      password: Math76003206
-      project_domain_name: Default
-      user_domain_name: Default
-    region: RegionOne
+  $ vi clouds.yaml  (clouds.yaml 파일 생성)
+  clouds:
+    openstack:
+     insecure: true
+     verify: false
+     identity_api_version: 3
+     auth:
+       auth_url: http://192.168.77.11/identity
+       project_name: cloudjeong
+        username: cloud-jeong
+        password: Math76003206
+        project_domain_name: Default
+        user_domain_name: Default
+      region: RegionOne
 
-$ source env.rc clouds.yaml openstack
-// live
-$ export OPENSTACK_SSH_KEY_NAME=knit
-$ export OPENSTACK_IMAGE_NAME=ubuntu-20.04-capi
-$ export OPENSTACK_FAILURE_DOMAIN=nova
-$ export OPENSTACK_DNS_NAMESERVERS=8.8.8.8
-$ export OPENSTACK_CONTROL_PLANE_MACHINE_FLAVOR=4Core.4G
-$ export OPENSTACK_NODE_MACHINE_FLAVOR=4Core.4G
+  $ source env.rc clouds.yaml openstack
+  // live
+  $ export OPENSTACK_SSH_KEY_NAME=knit
+  $ export OPENSTACK_IMAGE_NAME=ubuntu-20.04-capi
+  $ export OPENSTACK_FAILURE_DOMAIN=nova
+  $ export OPENSTACK_DNS_NAMESERVERS=8.8.8.8
+  $ export OPENSTACK_CONTROL_PLANE_MACHINE_FLAVOR=4Core.4G
+  $ export OPENSTACK_NODE_MACHINE_FLAVOR=4Core.4G
 
-$ openstack network list --external
-+--------------------------------------+--------+--------------------------------------+
-| ID                                   | Name   | Subnets                              |
-+--------------------------------------+--------+--------------------------------------+
-| **3bd5f7f4-da7b-4756-8609-514f16666296** | public | e410b105-65ac-4766-b56b-bb4dcf5d6b0c |
-+--------------------------------------+--------+--------------------------------------+
-$ export OPENSTACK_EXTERNAL_NETWORK_ID=3bd5f7f4-da7b-4756-8609-514f16666296
+  $ openstack network list --external
+  +--------------------------------------+--------+--------------------------------------+
+  | ID                                   | Name   | Subnets                              |
+  +--------------------------------------+--------+--------------------------------------+
+  | **3bd5f7f4-da7b-4756-8609-514f16666296** | public | e410b105-65ac-4766-b56b-bb4dcf5d6b0c |
+  +--------------------------------------+--------+--------------------------------------+
+  $ export OPENSTACK_EXTERNAL_NETWORK_ID=3bd5f7f4-da7b-4756-8609-514f16666296
 
 
-$ clusterctl generate cluster capi-quickstart --kubernetes-version v1.23.0 --control-plane-machine-count=3 --worker-machine-count=1 > capi-quickstart.yaml
-$ kubectl apply -f capi-quickstart.yaml
+  $ clusterctl generate cluster capi-quickstart --kubernetes-version v1.23.0 --control-plane-machine-count=3 --worker-machine-count=1 > capi-quickstart.yaml
+  $ kubectl apply -f capi-quickstart.yaml
 
-$ kubectl get cluster
-$ clusterctl describe cluster capi-quickstart
-$ kubectl get kubeadmcontrolplane
+  $ kubectl get cluster
+  $ clusterctl describe cluster capi-quickstart
+  $ kubectl get kubeadmcontrolplane
 
-$ clusterctl get kubeconfig capi-quickstart > capi-quickstart.kubeconfig
+  $ clusterctl get kubeconfig capi-quickstart > capi-quickstart.kubeconfig
 
-$ kubectl --kubeconfig=./capi-quickstart.kubeconfig apply -f https://docs.projectcalico.org/v3.21/manifests/calico.yaml
-$ kubectl --kubeconfig=./capi-quickstart.kubeconfig get nodes
-```
+  $ kubectl --kubeconfig=./capi-quickstart.kubeconfig apply -f https://docs.projectcalico.org/v3.21/manifests/calico.yaml
+  $ kubectl --kubeconfig=./capi-quickstart.kubeconfig get nodes
+  ```
 
 - Clean-up
 ```bash

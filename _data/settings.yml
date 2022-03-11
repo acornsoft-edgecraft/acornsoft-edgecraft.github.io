@@ -2,14 +2,14 @@
 # General Site Settings
 title: acornsoft-edgecraft # title 수정완료
 logo: edgecraft.png # logo 변경완료
-description: # 사이트 소개
+description: acornsoft-edgecraft community blog # 사이트 소개
 
 
 #-------------------------------
 # Author Settings
 author:
-  name: acornsoft # 이름 수정
-  image: main01.jpg # 메인이미지 수정
+  name: acornsoft # 이름 수정완료
+  image: main01.jpg # 메인이미지 수정완료
   say-hello: <strong>Edgecraft</strong>
   bio: 지역적으로 분산된 수많은 <strong>엣지 클라우드 인프라</strong>를 통제된 계획에 따라 <strong>고속으로 구축하고 관리</strong>하는 <strong>원격 자동화 관리</strong> SW 플랫폼
 
