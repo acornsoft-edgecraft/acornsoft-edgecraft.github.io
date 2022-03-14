@@ -92,8 +92,8 @@ $ ssh-copy-id ./id_rsa root@192.168.77.192
 $ ssh-copy-id ./id_rsa root@192.168.77.193
 $ ssh-copy-id ./id_rsa root@192.168.77.194
 ```
-3. Edit koreon.toml
-
+3. Edit koreon.toml  
+   
 ```toml
 [koreon]
 cluster-name = "koreon-ha"
