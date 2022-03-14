@@ -6,7 +6,7 @@ image:  kind-cluster.png
 tags:   Case-study
 ---
 
-# Kind를 boostrap cluster로 하여 openstack상에 workload cluster 생성하기
+# Kind를 bootstrap cluster로 하여 openstack상에 workload cluster 생성하기
 
 * 참고사이트
   - https://cluster-api.sigs.k8s.io/user/quick-start.html
@@ -18,7 +18,7 @@ tags:   Case-study
 * CAPI를 이용한 Openstack k8s cluster 구조
 ![clusterapi-openstack architecture](https://ssup2.github.io/images/theory_analysis/Kubernetes_ClusterAPI_Architecture_OpenStack/Kubernetes_ClusterAPI_Architecture_OpenStack.PNG)
 
-## Kind 설치 및 boostrap cluster 생성
+## Kind 설치 및 bootstrap cluster 생성
 ### 사전 요구사항
 ```bash
 $ mkdir -p /data/docker
@@ -69,7 +69,7 @@ GO111MODULE="on" go get sigs.k8s.io/kind@v0.11.1
 
 $ echo "export PATH=$PATH:/root/go/bin:/root/.local/bin" >> ~/.profile
 
-root@boostrap1:/etc/sysctl.d# which kind
+root@bootstrap1:/etc/sysctl.d# which kind
 /root/go/bin/kind
 ```
 
