@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Install MicroK8s and Clustering
-date:   2022-03-15 10:40:35 +0300
+date:   2022-03-14 11:40:35 +0300
 image:  microk8s-logo.png
 tags:   edgecraft # 수정가능성 있음
 ---

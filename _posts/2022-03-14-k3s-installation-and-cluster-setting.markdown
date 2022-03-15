@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  K3s Installation and Cluster Setting
-date:   2022-03-15 15:15:35 +0300
+date:   2022-03-14 10:15:35 +0300
 image:  k3s.svg
 tags:   edgecraft
 ---
