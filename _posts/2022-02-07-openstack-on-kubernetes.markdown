@@ -10,7 +10,7 @@ tags:   Case-study
 
 ## Work Process
 
-- Using Kubernetes v1.6+ Primatives
+- Using Kubernetes v1.6+ Primitives
 - Using Kubernetes Helm Charts
 
 
@@ -58,13 +58,13 @@ Amazon S3 및 Openstack Swift와 호환되는 인터페이스가 있는 RESTfull
 
 ## Ceph 구성 요소
 
-- **모니터** : Ceph Monitor ( ceph-mon)는 모니터 맵, 매니저 맵, OSD 맵, MDS 맵, CRUSH 맵을 포함한 클러스터 상태 맵을 관리합니다. 이러한 맵은 Ceph 데몬이 서로 조정하는 데 필요한 중요한 클러스터 상태입니다. 모니터는 데몬과 클라이언트 간의 인증 관리도 담당합니다. 이중화 및 고가용성을 위해 일반적으로 최소 3개의 모니터가 필요합니다.
+- **모니터** : Ceph Monitor (ceph-mon)는 모니터 맵, 매니저 맵, OSD 맵, MDS 맵, CRUSH 맵을 포함한 클러스터 상태 맵을 관리합니다. 이러한 맵은 Ceph 데몬이 서로 조정하는 데 필요한 중요한 클러스터 상태입니다. 모니터는 데몬과 클라이언트 간의 인증 관리도 담당합니다. 이중화 및 고가용성을 위해 일반적으로 최소 3개의 모니터가 필요합니다.
 
-- **관리자** : Ceph Manager 데몬( ceph-mgr)은 런타임 메트릭과 스토리지 활용도, 현재 성능 메트릭 및 시스템 로드를 포함하여 Ceph 클러스터의 현재 상태를 추적하는 역할을 합니다. Ceph Manager 데몬은 웹 기반 Ceph Dashboard 및 REST API를 포함하여 Ceph 클러스터 정보를 관리하고 노출하기 위해 Python 기반 모듈도 호스팅 합니다 . 고가용성을 위해서는 일반적으로 두 명 이상의 관리자가 필요합니다.  
+- **관리자** : Ceph Manager 데몬(ceph-mgr)은 런타임 메트릭과 스토리지 활용도, 현재 성능 메트릭 및 시스템 로드를 포함하여 Ceph 클러스터의 현재 상태를 추적하는 역할을 합니다. Ceph Manager 데몬은 웹 기반 Ceph Dashboard 및 REST API를 포함하여 Ceph 클러스터 정보를 관리하고 노출하기 위해 Python 기반 모듈도 호스팅 합니다 . 고가용성을 위해서는 일반적으로 두 명 이상의 관리자가 필요합니다.  
 
 - **Ceph OSD** : Ceph OSD (객체 스토리지 데몬, ceph-osd)는 데이터를 저장하고, 데이터 복제, 복구, 재조정을 처리하고 다른 Ceph OSD 데몬에서 하트비트를 확인하여 Ceph 모니터 및 관리자에 일부 모니터링 정보를 제공합니다. 이중화 및 고가용성을 위해 일반적으로 최소 3개의 Ceph OSD가 필요합니다.  
 
-- **MDS** : Ceph Metadata Server (MDS, ceph-mds)는 Ceph 파일 시스템 을 대신하여 메타데이터를 저장 합니다 (즉, Ceph Block Devices 및 Ceph Object Storage는 MDS를 사용하지 않음). Ceph 메타데이터 서버를 사용하면 POSIX 파일 시스템 사용자가 Ceph Storage Cluster에 막대한 부담을 주지 않고 기본 명령(예 ls: find, 등)을 실행할 수 있습니다.  
+- **MDS** : Ceph Metadata Server (MDS, ceph-mds)는 Ceph 파일 시스템을 대신하여 메타데이터를 저장합니다 (즉, Ceph Block Devices 및 Ceph Object Storage는 MDS를 사용하지 않음). Ceph 메타데이터 서버를 사용하면 POSIX 파일 시스템 사용자가 Ceph Storage Cluster에 막대한 부담을 주지 않고 기본 명령(예 ls: find, 등)을 실행할 수 있습니다.  
 
 ## Ceph on Kubernetes with Rook
 

@@ -66,7 +66,7 @@ Vscode를 사용한 Github Contribution 방법 소개
 <br/>
 <br/>
 
-## (optionall) Install pugin for vscode
+## (optionall) Install plugin for vscode
 ---
 Vscode에서 사용하는 Git 관련 플러그인들은 아래와 같이 제공된다.
 - GitLens

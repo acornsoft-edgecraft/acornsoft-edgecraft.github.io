@@ -5,7 +5,8 @@
   .page-title {
     font-size: 45px; //57px
     line-height: 70px; //70px
-    margin: 0;
+    margin: 0px; //0
+    // text-align: center;
   }
 
   @media only screen and (max-width: $mobile) {
