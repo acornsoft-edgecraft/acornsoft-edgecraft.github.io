@@ -10,10 +10,10 @@ permalink: /community/
 <p align="center"><img src="/images/conference-01.jpg"></p>
 
 ## 세션 1 EdgeCraft Platform 소개
-<iframe src="https://youtu.be/C4hcX67lsOQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C4hcX67lsOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 ## 세션 2 EdgeCraft Platform 주요 기술 소개
-<iframe src="https://youtu.be/7VnmqfUIU_Y" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7VnmqfUIU_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 ## 세션 3 K8S 설치 툴 Kore-On 소개
-<iframe src="https://youtu.be/Akq5vqL2yXU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Akq5vqL2yXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
