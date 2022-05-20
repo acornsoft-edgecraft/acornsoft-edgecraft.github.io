@@ -6,16 +6,19 @@ Zolan is a minimal blog theme for Jekyll.
 
 Table of Contents
 -----------------
-*   [Features](#features)
-*   [Demo](#demo)
-*   [Deployment](#deployment)
-*   [Posts](#posts)
-*   [Disqus Comments](#DisqusComments)
-*   [Instagram](#instagram)
-*   [Google Analytics](#GoogleAnalytics)
-*   [Update favicon](#UpdateFavicon)
-*   [Credits](#Credits)
-*   [Support](#Support)
+- [Zolan - Modern & Minimal Theme for Jekyll](#zolan---modern--minimal-theme-for-jekyll)
+  - [Table of Contents](#table-of-contents)
+    - [Features](#features)
+    - [Demo](#demo)
+    - [Deployment](#deployment)
+    - [Posts](#posts)
+    - [Disqus Comments](#disqus-comments)
+    - [Instagram](#instagram)
+    - [Google Analytics](#google-analytics)
+    - [Update favicon](#update-favicon)
+    - [Credits](#credits)
+    - [License](#license)
+    - [Support](#support)
 
 * * *
 
@@ -168,3 +171,5 @@ Mit License
 ### Support
 <p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
 <p align="center"><b>Thank you for your support ❤️</b></p>
+
+
