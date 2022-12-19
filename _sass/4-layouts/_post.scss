@@ -33,7 +33,7 @@
   .post__author {
     margin-right: 10px;
     font-weight: 700;
-    
+
     .author-name {
       color: $gray;
       border-bottom: 1px solid transparent;
@@ -44,33 +44,33 @@
   }
 
   .post__tags {
-   .post__tags-tag {
-     position: relative;
-     padding-left: 15px;
-     font-weight: 700;
-     &:before {
-       content: "";
-       position: absolute;
-       top: 50%;
-       left: 0;
-       transform: translateY(-50%);
-       width: 5px;
-       height: 5px;
-       border-radius: 50%;
-       background: $dark;
-     }
-   } 
+    .post__tags-tag {
+      position: relative;
+      padding-left: 15px;
+      font-weight: 700;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $dark;
+      }
+    }
   }
 }
 
 .post-image {
-    width: 70%; // 상단 이미지 size 조정
-    height: 70%; 
-    margin: 0 auto; // 상단 이미지 가운데 정렬
-    background-size: contain; //contain
-    background-position: center center;
-    background-repeat: no-repeat; // 이미지 반복코드 no-repeat
-    background-color: $white;
+  width: 70%; // 상단 이미지 size 조정
+  height: 70%;
+  margin: 0 auto; // 상단 이미지 가운데 정렬
+  background-size: contain; //contain
+  background-position: center center;
+  background-repeat: no-repeat; // 이미지 반복코드 no-repeat
+  background-color: $white;
   /*
     background-size: cover;
     background-position: center;
@@ -90,7 +90,7 @@
   margin: 20px auto; //80px
 
   &.post-no-image {
-    margin: 0 auto 80px; 
+    margin: 0 auto 80px;
   }
 
   @media only screen and (max-width: $mobile) {
@@ -150,17 +150,17 @@
       padding-right: 0;
       margin: auto; // 추가, post_nav_img 1개일 경우 가운데 정렬
     }
-    
+
     .post__nav__image {
       width: 70%; //추가, post_nav_image 크기 조정
       margin: auto; //추가
       display: block; //block
       margin-bottom: 40px;
       background-position: center;
-      background-size: cover; 
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: $light-gray;
-      transition: .35s ease-in-out;
+      transition: 0.35s ease-in-out;
       &:hover {
         opacity: 0.9;
       }
@@ -179,7 +179,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       text-align: center;
-      
+
       a {
         display: inline-block;
         max-width: 250px;
@@ -214,7 +214,7 @@
 
   @media only screen and (max-width: $tablet) {
     flex-wrap: wrap;
-    
+
     .prev,
     .next {
       flex: 1 0 100%;
@@ -248,19 +248,19 @@
 
 // utterances 사이즈 조정
 .utterances {
-  max-width:100%;
+  max-width: 100%;
 }
 
 //post_sidebar 스크롤 고정
-.sidebar-style{
+.sidebar-style {
   position: sticky;
-  top: 20px; 
+  top: 20px;
 }
 // 링크 클릭시 색상 변경
-a:hover{
-  color:red;
-  text-decoration-line:underline;
+a:hover {
+  color: red;
+  text-decoration-line: underline;
 }
-a:active{
-  color:green;
+a:active {
+  color: green;
 }

@@ -1,22 +1,29 @@
 ---
-layout: page
-title: community
-#title2: edgecraft 1차 컨퍼런스 # 메뉴와 page-title 분리
-permalink: /community/
-# image: 08.jpg
+layout: doc
+title: Community
+permalink: /conferences/
+image: opensource-img.jpg
+category: 커뮤니티
 ---
-<!-- <div class="page__content" style="padding: 0 80px"> image와 폭 맞춤을 위한 스타일 설정
-</div> -->
-### slack : edgecraft-community.slack.com
-### email : edgecraft@acornsoft.io
 
-<p align="center"><img src="/images/conference-01.jpg"></p>
+# 아콘소프트 EDGECRAFT Community
 
-## 세션 1 EdgeCraft Platform 소개
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C4hcX67lsOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-## 세션 2 EdgeCraft Platform 주요 기술 소개
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7VnmqfUIU_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-## 세션 3 K8S 설치 툴 Kore-On 소개
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Akq5vqL2yXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+현재 아콘소프트는 오픈소스 프로젝트로 EDGECRAFT의 개발을 진행하고 있다. EDGECRAFT 프로젝트의 개발과 관련하여 진행 단계별로 커뮤니티 행사를 진행한다.
+
+## 목적
+
+커뮤니티 운영의 목적은 EdgeCraft 프로젝트가 오픈소스로 진행되고 있기 때문에 온라인/오프라인 협업 공간의 제공과 진행 상의 내/외부 개발자간 소스코드 공유, 의사소통 공간으로 활용하고 커뮤니티 참여에 의해 프로젝트 소스의 공유과 개선 및 각종 정보의 교류를 통해 같이 발전하기 위함이다.
+
+## 시스템 구성
+
+- 엣지 클라우드 디자인 도구 SW 개발
+  설계 단계에서 목표로 하는 엣지 클라우드의 아키텍쳐를 시각화하여 검토할 수 있도록 함으로써, 작업에 대한 이해를 돕고 작업 결과에 대한 확신을 가지고 빠르게 구축 단계에 이르게 함.
+
+- 엣지 클라우드 구성 요소별 (OS, IaaS, KaaS, PaaS) 고속 설치 SW 개발
+  엣지 클라우드의 개별 구성 요소들의 설치, 업그레이트, 백업/복구 등을 자동화함. 개별 요소들의 생성, 설정의 과정과 설치 구성 요소들을 패키지화하여 작업 속도를 일단위에서 시간 단위로 개선함.
+
+- 엣지 클라우드 설치 관리 (병렬 설치, 스케쥴링) 자동화 SW 개발
+  개별 엣지 클라우드의 설치와 검증에 필요한 과정을 자동화하고, 복수의 엣지 클라우드 설치를 스케쥴링에 의해 순차적 또는 병렬 진행하도록 함.
+
+- 엣지 클라우드 보안, 규정 준수 검증 SW 개발
+  엣지 클라우드 설치 전 사전 검증, 설치 후 자동으로 검증하여 안전한 클라우드 인프라를 준비하도록 하고, 상용 운용 중에는 주기적 또는 간헐적으로 검증하여 결과를 운영 시스템에 전달함.

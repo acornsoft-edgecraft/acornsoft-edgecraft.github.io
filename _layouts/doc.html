@@ -30,7 +30,8 @@ layout: default
      <nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
       <ul class="sidebar-style"> <!--post 세로메뉴바 스크롤 고정-->
         {% assign grouped = site.docs | group_by: 'category' %}
-        {% for group in grouped %}    
+        {% for group in grouped %}
+        {% if page.category == group.name or page.category != '커뮤니티' and group.name == '정책' %}
           <li class="nav__item top-level {% if group.name == page.category %}current{% endif %}">
             {% assign items = group.items | sort: 'order' %}
             <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
@@ -40,12 +41,13 @@ layout: default
               {% endfor %}
             </ul>
           </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </nav>
     <!-- end menu -->
     <!-- begin post -->
-    <article class="post {{ no-image }} col col-8 col-t-10 col-m-12">
+    <article class="post {{ no-image }} col col-9 col-t-10 col-m-12">
 
       <div class="post__content">
         {{ content }}
