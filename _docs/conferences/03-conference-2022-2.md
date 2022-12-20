@@ -48,7 +48,7 @@ order: 1
 
 <br/>
 
-### 관리 UI
+## Session 2 : Management UI Prototype
 
 <details>
 <summary>Click to view</summary>
@@ -62,7 +62,7 @@ order: 1
 
 <br/>
 
-### 디자이너 UI
+## Session 3 : Designer UI Prototype
 
 <details>
 <summary>Click to view</summary>
