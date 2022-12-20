@@ -177,6 +177,9 @@ Cluster API는 Kubernetes 클러스터의 Provisioning, Upgrade 및 Operation을
    2.1 Provision인 경우는 3번으로 진행  
    2.2 저장 Only인 경우는 6번으로 진행
 3. Go-Template을 이용해서 전송된 정보를 Cluster API에 맞는 Manifests 정보로 변환
+   3.1. Create Cluster manifest
+   3.2. Create Master/Worker MachineSet manifests
+   3.3. Update scale-in/out to Custom Reosurce
 4. Kubernetes client (client-go dynamic)를 이용해서 Manifest 정보를 적용 (Provisioning 단계)  
    3.1. Cluster API CR 정보 생성 또는 갱신 발생  
    3.2. Cluster API Controller들의 Reconcile 호출을 통해 Provider CR 정보 설정  
