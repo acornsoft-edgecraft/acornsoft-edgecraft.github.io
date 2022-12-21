@@ -55,7 +55,29 @@ order: 1
 <div markdown="1">
 <br/>
 
-#### Content here!!!
+![Management Screen](/images/management-screen.png)
+
+엣지 클라우드 매니지먼트는 인프라, 클러스터 관리에 필요한 기능을 제공하는 것을 목표로 하며, 프로토타입에서는 Openstack 기반의 클라우드, 클러스터를 관리하는 기능을 제공하고 있다.
+
+내부적으로 Cluster API를 적용했으며, 인프라는 Openstack을 사용하고 있기 때문에 CAPO (Cluster API Provider for Openstack) 연계로 동작하고 있으며, 사용자의 Cluster 정보를 기준으로 Go-Template을 이용해서 Cluster API 처리용 Manifests들을 생성하여 처리하는 방식으로 운영된다.
+
+![Cluster API Processing](/images/edgecraft-capi-flow.png)
+
+프로토타입에서 제공하는 주요 기능은 다음과 같다.
+
+- Baremetal Cloud 관리
+  Baremetal Cloud는 단일 클러스터로 유지되므로 하위 클러스터들을 생성할 수 없다.
+- Openstack Cloud 관리  
+  Openstack Cloud는 단일 클러스터에 Openstack이 설치되며 Openstack을 통해서 하위 클러스터들을 관리한다.
+  - Openstack Cluster 관리  
+    Openstack Cloud의 하위 클러스터들을 관리한다.  
+    Openstack Cluster 정보를 입력하고 등록하는 시점에 등록만 할것인지, Provision까지 수행할 것인지 선택할 수 있다.
+  - Openstack Cluster Provisioning  
+    등록만 된 Openstack Cluster 정보를 기준으로 Openstack VM 기반의 Cluster Provision을 수행한다.
+
+기본적인 사용 방법은 아래의 동영상 참고
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pKYPIGKOcO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </details>
