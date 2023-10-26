@@ -1,0 +1,145 @@
+---
+layout: doc
+menu: 4차 컨퍼런스 (2023년)
+title: EdgeCraft 4차 컨퍼런스 (2023년)
+category: 커뮤니티
+order: 1
+---
+
+<!-- <div class="page__content" style="padding: 0 80px"> image와 폭 맞춤을 위한 스타일 설정
+</div> -->
+
+## Contacts
+
+- slack : edgecraft-community.slack.com
+- email : edgecraft@acornsoft.io
+
+<p align="center"><img src="/images/conference-03.png"></p>
+
+# 엣지 클라우드 구축 플랫폼 CIS Benchmarks 소개
+
+- 3차년도의 엣지 클라우드 구축 플랫폼 CIS Benchmarks는 엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 이다.
+
+<br />
+
+## Session 1 : API Server Swagger 기준 API
+
+<details>
+<summary>Click to view</summary>
+<div markdown="1">
+<br/>
+
+- Cloud 관련 APIs  
+  Cloud는 Baremetal 과 Openstack을 사용하는 2가지 유형으로 구성된다.
+  ![Cloud](/images/swagger-cloud.png)
+- Cloud를 구성하는 Node 관련 APIs  
+  각 Cloud를 구성하는 Node들은 Master / Worker로 구성된다.
+  ![Node](/images/swagger-node.png)
+- Openstack Cluster 관련 APIs  
+  Openstack Cloud 내에 Kubernetes Cluster 관련 APIs
+  ![cluster](/images/swagger-openstack-cluster.png)
+- Openstack Cluster를 구성하는 NodeSet 관련 APIs  
+  NodeSet은 MasterSet, WorkerSet으로 구분되며, 각 Set은 Replicas를 통해 실제 운용할 Node의 수를 지정할 수 있으며 MasterSet은 1개만 허용되고, WorkerSet은 여러 개를 운영할 수 있다.
+  ![NodeSet](/images/swagger-nodeset.png)
+
+</div>
+</details>
+
+<br/>
+
+## Session 2 : Management UI Prototype
+
+<details>
+<summary>Click to view</summary>
+<div markdown="1">
+<br/>
+
+![Management Screen](/images/management-screen.png)
+
+엣지 클라우드 매니지먼트는 인프라, 클러스터 관리에 필요한 기능을 제공하는 것을 목표로 하며, 프로토타입에서는 Openstack 기반의 클라우드, 클러스터를 관리하는 기능을 제공하고 있다.
+
+내부적으로 Cluster API를 적용했으며, 인프라는 Openstack을 사용하고 있기 때문에 CAPO (Cluster API Provider for Openstack) 연계로 동작하고 있으며, 사용자의 Cluster 정보를 기준으로 Go-Template을 이용해서 Cluster API 처리용 Manifests들을 생성하여 처리하는 방식으로 운영된다.
+
+![Cluster API Processing](/images/edgecraft-capi-flow.png)
+
+프로토타입에서 제공하는 주요 기능은 다음과 같다.
+
+- Baremetal Cloud 관리
+  Baremetal Cloud는 단일 클러스터로 유지되므로 하위 클러스터들을 생성할 수 없다.
+- Openstack Cloud 관리  
+  Openstack Cloud는 단일 클러스터에 Openstack이 설치되며 Openstack을 통해서 하위 클러스터들을 관리한다.
+  - Openstack Cluster 관리  
+    Openstack Cloud의 하위 클러스터들을 관리한다.  
+    Openstack Cluster 정보를 입력하고 등록하는 시점에 등록만 할것인지, Provision까지 수행할 것인지 선택할 수 있다.
+  - Openstack Cluster Provisioning  
+    등록만 된 Openstack Cluster 정보를 기준으로 Openstack VM 기반의 Cluster Provision을 수행한다.
+
+기본적인 사용 방법은 아래의 동영상 참고
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pKYPIGKOcO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</details>
+
+<br/>
+
+## Session 3 : Designer UI Prototype
+
+<details>
+<summary>Click to view</summary>
+<div markdown="1">
+<br/>
+
+![Designer Screen](/images/designer-screen.png)
+
+디자이너 프로토타입은 아래와 같은 영역 구조를 가진다.
+
+- 메뉴 영역
+  - 인프라 디자이너 (Cloud)
+  - 클러스터 디자이너 (Cluster)
+  - 플랫폼 디자이너 (Platform Applications)
+- 컴포넌트 영역
+  - Cloud Types
+  - Cluster Components
+  - Networks
+  - Storage Types
+  - 향후 용도에 맞는 컴포넌트들 추가
+- 배치 디자인 영역
+  - 컴포넌트 영역에서 사용할 컴포넌트 Drag & Drop 으로 배치
+  - 각 컴포넌트 선택 후 Moving
+  - 전체 디자인 뷰 (오른쪽 하단)
+  - 확대/축소, 화면 View Fitting, Lock 제어 버튼 (왼쪽 하단)
+  - 재 배치, 전채 선택, 저장, 로드 명령 버트 (오른쪽 상단)
+  - 배치된 컴포넌트간의 연결선 Drawing
+- 컴포넌트 속성 영역
+  - 디자인 영역에 배치된 컴포넌트에 대한 속성 정보 설정
+  - 향후 연결선을 통해 연결된 컴포넌트간의 연결 정보 설정 기능 추가 예정
+
+사용자에 의해서 디자인된 인프라, 클러스터, 플랫폼 어플리케이션 디자인 정보는 디자인 영역의 "Save, Load" 버튼에 의해서 JSON 데이터 관리된다.
+
+![Designer JSON Data](/images/designer-json-data.png)
+
+위의 그림과 같이 배치된 디자인 영역을 "저장"하면 우선 브라우저의 LocalStorage에 관련된 JSON 데이터를 저장한다.
+이 부분은 향후 서버에서 템플릿으로 관리하는 방식으로 변경 적용될 예정이다.
+
+디자인된 배치 정보는 크게 다음과 같이 구성된다.
+
+- 디자이너 데이터
+  - Position
+  - Zoom
+- 컴포넌트 연계 데이터
+  - nodes - 컴포넌트 자체 데이터
+    - 디자이너 정보
+    - data - 컴포넌트 속성 정보를 가진다.
+  - edges - 컴포넌트가 연결 데이터
+    - sourceNode - 연결 소스 컴포넌트
+    - targetNode - 연결 대상 컴포넌트
+
+기본적인 사용 방법은 아래의 동영상 참고
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UQ8MPIeKXis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</details>
+
+<br/>

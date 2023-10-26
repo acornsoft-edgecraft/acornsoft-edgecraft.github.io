@@ -25,7 +25,6 @@ order: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3Bot4pjlEfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 ## Session 2 EdgeCraft Platform 주요 기술 소개
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=7QN0eq9eiv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -33,3 +32,7 @@ order: 1
 ## Session 3 K8S 설치 툴 Kore-On 소개
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=oxmzCNWOP3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe id="player" type="text/html" width="560" height="315"
+  src="https://youtu.be/3Bot4pjlEfg"
+  frameborder="0"></iframe>
