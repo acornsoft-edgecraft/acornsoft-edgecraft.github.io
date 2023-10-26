@@ -23,14 +23,38 @@ order: 1
 
 ## Session 1 : EdgeCraft Platform 소개
 
+<details>
+<summary>Click to view</summary>
+<div markdown="1">
+<br/>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C4hcX67lsOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
+</div>
+</details>
+
 ## Session 2 EdgeCraft Platform 주요 기술 소개
+
+<details>
+<summary>Click to view</summary>
+<div markdown="1">
+<br/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7VnmqfUIU_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
+</div>
+</details>
+
 ## Session 3 K8S 설치 툴 Kore-On 소개
 
-<iframe width="560" height="315" src="https://drive.google.com/file/d/1StRm5noyApEDnD8U5rROi-V1eHNulOXq/view?usp=sharing" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<details>
+<summary>Click to view</summary>
+<div markdown="1">
+<br/>
+
+<iframe width="560" height="315" src="https://youtu.be/oxmzCNWOP3E?feature=shared" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</details>
