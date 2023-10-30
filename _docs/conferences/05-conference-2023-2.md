@@ -1,7 +1,7 @@
 ---
 layout: doc
-menu: 4차 컨퍼런스 (2023년)
-title: EdgeCraft 4차 컨퍼런스 (2023년)
+menu: 5차 컨퍼런스 (2023년)
+title: EdgeCraft 5차 컨퍼런스 (2023년)
 category: 커뮤니티
 order: 1
 ---
@@ -18,97 +18,77 @@ order: 1
 
 # 엣지 클라우드 구축 플랫폼 백업/복원 시스템 소개
 
-- 3차년도의 엣지 클라우드 구축 플랫폼 엣지 클라우드 백업/복원 시스템은 관리하는 작업을 자동화 하는 시스템 이다.
-- 3차년도의 엣지 클라우드 구축 플랫폼 엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템은 KaaS 지원 유형(kubeadm, k3s, microk8s)을 지원 합니다.
+- 3차년도의 엣지 클라우드 구축 플랫폼 엣지 클라우드 백업/복원 시스템은 Velero를 사용하여 다음 기능을 수행할 수 있습니다.
+  - 클러스터를 백업하고 필요할 때 복구를 할 수 있습니다.
+  - 클러스터 자원을 다른 클러스터로 마이그레이션 할 수 있습니다.
+  - 클러스터를 복제할 수 있습니다.
 
 <br />
 
-## Session 1 : CIS Benchmarks란 무엇인가?
+## Session 1 : Velero란 무엇인가?
 
 <details>
 <summary>Click to view</summary>
 <div markdown="1">
 <br/>
 
-### CIS 벤치마크란 무엇인가요?
+### Velero란 무엇인가요?
 
-Center of Internet Security(CIS)의 CIS 벤치마크는 세계적으로 인정받는 일련의 합의 기반 모범 사례로, 보안 전문가가 사이버 보안 방어를 구현하고 관리하도록 지원합니다. 보안 전문가로 구성된 글로벌 커뮤니티가 참여를 통해 개발한 이 지침은 새로운 위험으로부터 조직을 사전 예방적으로 보호할 수 있도록 지원합니다. 기업들은 디지털 자산에서 구성 기반 보안 취약성을 최소화하기 위해 CIS 벤치마크 지침을 구현합니다.
+Velero는 Kubernetes 클러스터에서 애플리케이션 및 클러스터 상태의 백업 및 복원을 지원하는 오픈 소스 도구입니다. Velero는 이러한 기능을 제공하여 Kubernetes 환경에서 데이터 손실 및 재해 복구 시나리오에 대비할 수 있도록 도와줍니다.
 
-
-### CIS 벤치마크가 중요한 이유는 무엇인가요?
-
-CIS 벤치마크와 같은 도구는 25개 이상의 공급업체 제품을 배포하기 위해 보안 전문가와 분야별 전문가가 개발한 보안 모범 사례를 개괄적으로 설명하기 때문에 중요합니다. 이러한 모범 사례는 새로운 제품 또는 서비스의 배포 계획을 수립하거나 기존 배포가 안전한지 확인하기 위한 좋은 출발점이 됩니다.
-
-CIS 벤치마크를 구현할 때, 다음과 같은 단계를 수행하여 일반 리스크와 새롭게 등장하는 리스크로부터 레거시 시스템을 보다 효과적으로 보호할 수 있습니다. 
-
-- 사용되지 않는 포트 비활성화
-- 불필요한 앱 권한 제거
-- 관리 권한 제한
-
-또한 IT 시스템과 애플리케이션은 불필요한 서비스를 사용하지 않도록 설정할 때 더 나은 성능을 발휘합니다. 
-
-CIS 벤치마크를 도입하면 다음과 같은 몇 가지 사이버 보안 관련 이점을 얻을 수 있습니다.
- 
-- 전문가 사이버 보안 지침
-  - CIS 벤치마크는 전문가의 검증을 통해 입증된 보안 구성 프레임워크를 조직에 제공합니다. 기업은 보안의 위험을 초래하는 시행착오 시나리오를 피하면서 다양한 IT 및 사이버 보안 커뮤니티의 전문 지식을 활용할 수 있습니다.
+Velero는 쿠버네티스 클러스터의 안전성과 신뢰성을 높이기 위한 중요한 도구 중 하나이며, 데이터 손실을 방지하고 재해 복구를 위한 백업 및 복원 솔루션으로 사용됩니다. Velero는 CNCF (Cloud Native Computing Foundation) 프로젝트 중 하나로서, Kubernetes의 생태계와 통합되어 있으며 커뮤니티에 의해 지속적으로 개발되고 유지보수됩니다.
 
 
-- 세계적으로 인정받는 보안 표준
-  - CIS 벤치마크는 전 세계의 정부, 기업, 연구 및 학술 기관 모두가 인정하고 수용하는 유일한 모범 사례 가이드입니다. 합의 기반 의사 결정 모델을 기반으로 하는, 글로벌하고 다양한 커뮤니티 덕분에 CIS 벤치마크는 리전별 법률 및 보안 표준보다 훨씬 폭넓은 적용 범위와 수용 범위를 자랑합니다. 
+### Velero의 기능 및 주요 컨셉은 다음과 같습니다
 
+- 데이터 손실 방지: Kubernetes 클러스터 내의 애플리케이션 및 데이터는 중요합니다. Velero를 사용하여 백업을 수행하면 애플리케이션 데이터를 보호하고 데이터 손실을 방지할 수 있습니다.
 
-- 비용 효율적인 위협 예방
-  - CIS 벤치마크 문서는 누구나 무료로 다운로드하여 구현할 수 있습니다. 기업이 모든 종류의 IT 시스템에 대한 최신 단계별 지침을 무료로 얻을 수 있습니다. IT 거버넌스를 실현하고 예방 가능한 사이버 위협으로 인한 재정적 피해와 평판의 손상을 방지할 수 있습니다.
+- 재해 복구: 클러스터에 장애가 발생했을 때, Velero를 사용하여 클러스터를 빠르게 복구할 수 있습니다. 이것은 장애 복구 시간을 단축하고 비즈니스 연속성을 유지하는 데 도움이 됩니다.
 
+- 테스트 및 개발: Velero는 개발 및 테스트 환경에서 사용할 수 있으므로, 개발자는 클러스터를 쉽게 되돌릴 수 있고, 새로운 기능을 시험하거나 버그를 디버깅할 수 있습니다.
 
-- 규제 준수
-  - CIS 벤치마크는 다음과 같은 주요 보안 및 데이터 프라이버시 프레임워크에 부합합니다.
-    - 미국 국립 표준 기술 연구소(NIST) 사이버 보안 프레임워크 
-    - Health Insurance Portability and Accountability Act(HIPAA)
-    - Payment Card Industry Data Security Standard(PCI DSS)
+- 이동 및 마이그레이션: Velero는 클러스터 간 또는 클라우드 프로바이더 간에 애플리케이션과 데이터를 마이그레이션하는 데 사용할 수 있습니다. 이것은 클라우드 벤더 변경 또는 환경 이동 시 유용합니다.
 
-CIS 벤치마크를 구현하는 것은 규제가 심한 업종에서 비즈니스를 운영하는 조직의 규정 준수 실현을 위한 중요한 조치입니다. 잘못 구성된 IT 시스템으로 인한 규정 준수 실패 문제를 방지할 수 있습니다.
+- 정책 관리: Velero는 백업 및 복원 정책을 정의하고 관리할 수 있어서 특정 애플리케이션이나 네임스페이스에 대한 백업 정책을 설정할 수 있습니다.
+
+- 오픈 소스 및 확장 가능성: Velero는 CNCF(클라우드 네이티브 컴퓨팅 재단)의 일부로서 오픈 소스로 개발되어 커뮤니티에 의해 지속적으로 발전하고 있습니다. 또한 플러그인 아키텍처를 지원하여 다양한 스토리지 백엔드 및 기타 확장 기능을 추가할 수 있습니다.
+
+![Velero Backup Workflow](/images/velero-workflow.png)
+
 
 </div>
 </details>
 <br/>
 
-## Session 2 : 엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 소개 및 데모
+## Session 2 : 엣지 클라우드 백업/복원 시스템 소개 및 데모
 
 <details>
 <summary>Click to view</summary>
 <div markdown="1">
 <br/>
 
-##### 1. 엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 소개
+##### 1. 엣지 클라우드 백업/복원 시스템 소개
 
-각 CIS 벤치마크에는 권장 사항에 대한 설명, 권장 사항의 이유 및 시스템 관리자가 권장 사항을 올바르게 구현하기 위해 따를 수 있는 지침이 포함되어 있습니다. 
-각 벤치마크는 대상 IT 시스템의 각 영역을 다루기 때문에 수백 페이지에 이를 수 있습니다. 이런 CIS 벤치마크를 구현하고 모든 버전 릴리스를 관리하는 작업은 수동으로 수행하기에 너무 복잡합니다.
+Edgecraft 백업/복원 시스템은 분산되어 있는 클러스터들의 백업이 필요한 경우 Velero 플러그인을 사용하여 Object Storage에 백업할 수 있습니다. 이를 통합 관리 하기 위해 Cluster API를 활용하여 관리 클러스터에서 해당 클러스터들의 백업/복원 절차를 통합 관리 할 수 있습니다.
 
-이러한 이유로 엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템을 사용하여 CIS 규정 준수를 모니터링 할 수 있습니다. 엣지 클라우드 무결성(보안, 안정성) 자동화 검증 시스템은 KaaS 지원 유형(kubeadm, k3s, microk8s)을 지원 합니다.
+- 사전 준비
+Object Storage installed - Minio
 
+<br/>
 
-##### 2. 엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 Kaas 지원 유형별 데모
+- Work flow
 
-- CIS Benchmarks for kubeadm
+![Edgecraft BackRes Workflow](/images/edgecraft-backres-workflow.png)
+
+<br/>
+
+##### 2. 엣지 클라우드 백업/복원 시스템 데모
+
+- Target cluster backup and restore
   <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hx3SB9-OTG4?si=KdxMmmRU1FRsOUAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/bkZNvtoTrDg?si=b5UEq0-KNI49VgtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <br/>
   <br/>
 
-- CIS Benchmarks for microk8s
-  <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/umAp8d_rOq4?si=UH3BcW5pXMtTDuqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <br/>
-  <br/>
-
-- CIS Benchmarks for k3s
-  <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/e9Pu6vKxIMg?si=AYviazOj9MUUMzCm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <br/>
-  <br/>
-  
-</div>
-</details>
 
 <br/>
