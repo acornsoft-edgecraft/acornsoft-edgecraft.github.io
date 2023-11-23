@@ -1,7 +1,7 @@
 ---
 layout: doc
-menu: 5차 컨퍼런스 (2023년)
-title: EdgeCraft 5차 컨퍼런스 (2023년)
+menu: 6차 컨퍼런스 (2023년)
+title: EdgeCraft 6차 컨퍼런스 (2023년)
 category: 커뮤니티
 order: 1
 ---
@@ -16,13 +16,32 @@ order: 1
 
 <p align="center"><img src="/images/conference-06.png"></p>
 
-# 엣지 클라우드 구축 플랫폼(Edgecraft) 주요 기술 소개
+# 엣지 클라우드 구축 플랫폼 Edgecraft의 주요 기술 소개
 
   <iframe src=""></iframe>
   <br/>
   <br/>
 
 
-### 제목?
+### EdgeCraft Platform의 주요 기술 A to Z
 
+4차 산업 혁명에 따라 다양한 산업군에서 엣지 클라우드가 확산되고 있으며, 
+소규모 데이터 센터가 광범위한 지역에 분산배치되는 엣지 컴퓨팅 특성상 클라우드 인프라 구축, 통합 제아, 
+어플리케이션의 배치/구성을 위한 자동화된 플랫폼이 필요하게 됩니다.
 
+저희 EdgeCraft platform를 구축해서 목표하고자 하는 바는 클라우드 인프라 구축 자동화,
+k8s 인프라 및 paas 전 부분에 대한 구성 자동화,
+플랫폼 디자이너를 통해서 엣지 클라우드 인프라 및 어플리케이션 구성을 템플릿 화 하여 
+다수의 엣지 클라우드에 템플릿화 된 디자인 요소를 가지고 배포 및 업그레이드를 하고자 합니다.
+
+이번 웨비나에서는 EdgeCraft Platform의 주요 기술 소개와 시연을 통해 EdgeCraft를 통헤 엣지 클라우드가 
+어떻게 구성되고 관리/운영될 수 있는지 살펴보겠습니다.
+
+#### 목차
+
+* 프로잭트 개요
+* 플랫폼 개발 환경
+* EdgeCraft Platform의 구조
+* EdgeCraft Platform의 Workflow
+* EdgeCraft Platform의 주요 기술
+* EdgeCraft Platform의 시연
