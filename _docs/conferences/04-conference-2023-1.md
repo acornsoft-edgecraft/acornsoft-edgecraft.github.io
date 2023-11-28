@@ -96,19 +96,19 @@ CIS 벤치마크를 구현하는 것은 규제가 심한 업종에서 비즈니�
 
 - CIS Benchmarks for kubeadm
   <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hx3SB9-OTG4?si=KdxMmmRU1FRsOUAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="968" height="544" src="https://www.youtube.com/embed/hx3SB9-OTG4?si=KdxMmmRU1FRsOUAx" title="엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 Kaas 지원 유형별 데모 - kubeadm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <br/>
   <br/>
 
 - CIS Benchmarks for microk8s
   <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/umAp8d_rOq4?si=UH3BcW5pXMtTDuqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="968" height="544" src="https://www.youtube.com/embed/umAp8d_rOq4?si=UH3BcW5pXMtTDuqu" title="엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 Kaas 지원 유형별 데모 - microk8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <br/>
   <br/>
 
 - CIS Benchmarks for k3s
   <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/e9Pu6vKxIMg?si=AYviazOj9MUUMzCm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="968" height="544" src="https://www.youtube.com/embed/e9Pu6vKxIMg?si=AYviazOj9MUUMzCm" title="엣지 클라우드 무결성(보안, 안정성) 검증 자동화 시스템 Kaas 지원 유형별 데모 - k3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <br/>
   <br/>
   

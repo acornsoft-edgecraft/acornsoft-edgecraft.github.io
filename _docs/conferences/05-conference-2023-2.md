@@ -86,7 +86,7 @@ Object Storage installed - Minio
 
 - Target cluster backup and restore
   <br/>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bkZNvtoTrDg?si=b5UEq0-KNI49VgtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="968" height="544" src="https://www.youtube.com/embed/bkZNvtoTrDg?si=b5UEq0-KNI49VgtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <br/>
   <br/>
 

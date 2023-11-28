@@ -18,9 +18,9 @@ order: 1
 
 # 엣지 클라우드 구축 플랫폼 Edgecraft의 주요 기술 소개
 
-  <iframe src=""></iframe>
-  <br/>
-  <br/>
+<iframe width="968" height="544" src="https://www.youtube.com/embed/l9zDrGODMF0?si=0c2n97xldyOLZc3i&amp;controls=0" title="Acornsoft 웨비나 [엣지 클라우드 구축 플랫폼 Edgecraft의 주요 기술 소개]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br/>
+<br/>
 
 
 ### EdgeCraft Platform의 주요 기술 A to Z
@@ -36,6 +36,50 @@ k8s 인프라 및 paas 전 부분에 대한 구성 자동화,
 
 이번 웨비나에서는 EdgeCraft Platform의 주요 기술 소개와 시연을 통해 EdgeCraft를 통헤 엣지 클라우드가 
 어떻게 구성되고 관리/운영될 수 있는지 살펴보겠습니다.
+
+
+### EdgeCraft Platform의 주요 기술 시연
+
+<details>
+<summary>엣지 클라우드 구축 플랫폼 Edgecraft의 주요 기술 소개</summary>
+<div markdown="1">
+<br/>
+<iframe width="968" height="544" src="https://www.youtube.com/embed/5RdiFXDmqE0?si=U4_2elC2plwuW4KG&amp;controls=0" title="Acornsoft 웨비나 [엣지 클라우드 구축 플랫폼 Edgecraft의 주요 기술 소개]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</details>
+
+<details>
+<summary>엣지 클라우드 구축 플랫폼 백업/복원 시스템 소개</summary>
+<div markdown="1">
+<br/>
+<iframe width="968" height="544" src="https://www.youtube.com/embed/bkZNvtoTrDg?si=b5UEq0-KNI49VgtA" title="Acornsoft 웨비나 [엣지 클라우드 구축 플랫폼 백업/복원 시스템 소개]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</details>
+
+<details>
+<summary>엣지 클라우드 CIS Benchmarks 자동화 검증 - k3s</summary>
+<div markdown="1">
+<br/>
+<iframe width="968" height="544" src="https://www.youtube.com/embed/hx3SB9-OTG4?si=KdxMmmRU1FRsOUAx" title="Acornsoft 웨비나 [엣지 클라우드 CIS Benchmarks 자동화 검증 - k3s]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</details>
+
+<details>
+<summary>엣지 클라우드 CIS Benchmarks 자동화 검증 - microk8s</summary>
+<div markdown="1">
+<br/>
+<iframe width="968" height="544" src="https://www.youtube.com/embed/umAp8d_rOq4?si=UH3BcW5pXMtTDuqu" title="Acornsoft 웨비나 [엣지 클라우드 CIS Benchmarks 자동화 검증 - microk8s]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</details>
+
+<details>
+<summary>엣지 클라우드 CIS Benchmarks 자동화 검증 - kubeadm</summary>
+<div markdown="1">
+<br/>
+<iframe width="968" height="544" src="https://www.youtube.com/embed/e9Pu6vKxIMg?si=AYviazOj9MUUMzCm" title="Acornsoft 웨비나 [엣지 클라우드 CIS Benchmarks 자동화 검증 - kubeadm]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</details>
+
 
 #### 목차
 
