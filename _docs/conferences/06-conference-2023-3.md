@@ -38,7 +38,7 @@ k8s 인프라 및 paas 전 부분에 대한 구성 자동화,
 어떻게 구성되고 관리/운영될 수 있는지 살펴보겠습니다.
 
 
-### EdgeCraft Platform의 주요 기술 시연
+### EdgeCraft Platform의 주요 기술 시연 자료
 
 <details>
 <summary>엣지 클라우드 구축 플랫폼 Edgecraft의 주요 기술 소개</summary>
