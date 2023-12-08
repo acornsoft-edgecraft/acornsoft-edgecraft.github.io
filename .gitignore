@@ -9,3 +9,4 @@ Gemfile.lock
 .vscode/
 .jekyll-cache/
 .DS_Store
+*__
